@@ -82,7 +82,7 @@ class Staff extends React.Component {
                   <Typography className={ classes.title } variant="h4" gutterBottom>
                     Specialty:
                     <Typography className={ classes.title } variant="h6">
-                      Step-by-step Video analysis based instructions
+                      Step-by-step video analysis based instructions
                     </Typography>
                   </Typography>
                 </div>

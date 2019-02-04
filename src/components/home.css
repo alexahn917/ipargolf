@@ -1,0 +1,9 @@
+
+@media screen and (max-width: 1080px) {
+  .Home-headerText-3 .MuiTypography-h1-18 {
+    font-size: 4.15rem
+  }
+  .Home-headerText-3 .MuiTypography-h3-20 {
+    font-size: 2.4rem
+  }
+}

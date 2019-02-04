@@ -7,6 +7,7 @@ import About from './About';
 import Service from './Service';
 import Staff from './Staff';
 import Contact from './Contact';
+import './home.css';
 
 const { Header, Content, Footer } = Layout;
 
@@ -48,8 +49,8 @@ class Home extends React.Component {
       <Layout className="container">
         <Header className={ classes.header }>
           <div className={ classes.headerText }>
-            <Typography className={ classes.title } variant="h1">
-              IPar Golf Academy
+            <Typography className={ classes.title } variant="h1" gutterBottom>
+              iPar Golf Academy
             </Typography>
             <Typography className= {classes.subtitle } variant="h3">
               We Make Golf Easy
