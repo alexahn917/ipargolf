@@ -73,20 +73,20 @@ class Staff extends React.Component {
               </Col>
               <Col xs={24} sm={12} md={16}>
                 <div className={ classes.desc }>
-                  <Typography className={ classes.title } variant="h4" gutterBottom>
-                    Role
+                  <Typography className={ classes.title } variant="h5" gutterBottom>
+                    <b>Role</b>
                     <Typography className={ classes.title } variant="h6">
                       Master Golf Instructor
                     </Typography>
                   </Typography>
-                  <Typography className={ classes.title } variant="h4" gutterBottom>
-                    Experience
+                  <Typography className={ classes.title } variant="h5" gutterBottom>
+                    <b>Experience</b>
                     <Typography className={ classes.title } variant="h6">
                       PGA since (2000)
                     </Typography>
                   </Typography>
-                  <Typography className={ classes.title } variant="h4" gutterBottom>
-                    Specialty
+                  <Typography className={ classes.title } variant="h5" gutterBottom>
+                    <b>Specialty</b>
                     <Typography className={ classes.title } variant="h6">
                       Step-by-step video analysis based instructions
                     </Typography>

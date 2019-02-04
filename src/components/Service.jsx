@@ -19,7 +19,7 @@ const styles = theme => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: '100px 30px 30px 30px',
+    padding: '100px 30px 30px 15px',
     textAlign: 'center',
   },
   title: {
@@ -29,7 +29,7 @@ const styles = theme => ({
     color: '#c6c3c3',
   },
   images: {
-    padding: '30px 30px 100px 30px',
+    padding: '0px 30px 100px 30px',
   },
 });
 

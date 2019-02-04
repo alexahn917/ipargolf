@@ -29,11 +29,51 @@ const theme = createMuiTheme({
   },
 });
 
+const flexibleTheme = {
+  ...theme,
+  overrides: {
+    MuiTypography: {
+      h1: {
+        [theme.breakpoints.down('md')]: {
+          fontSize: '4.5rem',
+        },
+        [theme.breakpoints.down('xs')]: {
+          fontSize: '3rem',
+        },
+      },
+      h2: {
+        [theme.breakpoints.down('md')]: {
+          fontSize: '3rem',
+        },
+        [theme.breakpoints.down('xs')]: {
+          fontSize: '2rem',
+        },
+      },
+      h3: {
+        [theme.breakpoints.down('md')]: {
+          fontSize: '2.5rem',
+        },
+        [theme.breakpoints.down('xs')]: {
+          fontSize: '1.5rem',
+        },
+      },
+      h4: {
+        [theme.breakpoints.down('md')]: {
+          fontSize: '2rem',
+        },
+        [theme.breakpoints.down('xs')]: {
+          fontSize: '1.3rem',
+        },
+      },
+    },
+  },
+};
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <MuiThemeProvider theme={theme}>
+        <MuiThemeProvider theme={flexibleTheme}>
           <Home/>
         </MuiThemeProvider>
       </div>

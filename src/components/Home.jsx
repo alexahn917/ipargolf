@@ -7,7 +7,6 @@ import About from './About';
 import Service from './Service';
 import Staff from './Staff';
 import Contact from './Contact';
-import './Home.css';
 
 const { Header, Content, Footer } = Layout;
 
