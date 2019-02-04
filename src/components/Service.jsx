@@ -50,17 +50,19 @@ class Service extends React.Component {
         <div className={ classes.contentContainer }>
           <div className={ classes.content }>
             <Typography className={ classes.title } variant="h1" gutterBottom>
-              Lessons
+              Service
             </Typography>
             <Typography className={ classes.text } variant="h4" gutterBottom>
-              iPar Academy is a <b>Golf Lesson</b> institution with an indoor
-              driving range.
+              iPar Academy provide state of the art Golf Lesson.
             </Typography>
             <Typography className={ classes.text } variant="h4" gutterBottom>
-              We also sell great selection of Golf Clubs, along with club fitting services.
+              Each individual owns an indoor driving range lane with unlimited balls during lesson.
             </Typography>
             <Typography className={ classes.text } variant="h4" gutterBottom>
-              iPar offers golf lessons for beginners, adults, seniors, and juniors.
+              All swings are evaluated through multi-angled computer based video analyzers.
+            </Typography>
+            <Typography className={ classes.text } variant="h3" gutterBottom>
+              $600 for 10 lessons (45 mins each)
             </Typography>
           </div>
           <div className={classes.images}>

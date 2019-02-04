@@ -26,7 +26,10 @@ const styles = theme => ({
     color: 'white',
   },
   text: {
-    color: '#c6c3c3',
+    color: '#dacfcf',
+  },
+  instructor: {
+    padding: '0px 50px 0px 50px',
   },
   desc: {
     padding: '50px',
@@ -34,13 +37,16 @@ const styles = theme => ({
     margin: '20px',
     backgroundColor: 'rgba(109, 133, 114, 0.8)',
   },
+  lessonImages: {
+    padding: '100px 50px 100px 50px',
+  },
 });
 
 const ImageCard = ({ url }) =>
     <div className="imageCard" style={{
       borderRadius: '10px',
       margin: '20px',
-      minHeight: '400px',
+      minHeight: '345px',
       backgroundImage: `url(${url})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -60,32 +66,48 @@ class Staff extends React.Component {
               Instructor
             </Typography>
           </div>
-          <div className={classes.images}>
+          <div className={classes.instructor}>
             <Row>
-              <Col xs={24} s={12} md={12}>
-                <ImageCard url='/image/lesson_1.jpg'/>
+              <Col xs={24} sm={12} md={8}>
+                <ImageCard style={{ padding: '100px' }} url='/image/profile.jpg'/>
               </Col>
-              <Col xs={24} s={12} md={12}>
+              <Col xs={24} sm={12} md={16}>
                 <div className={ classes.desc }>
                   <Typography className={ classes.title } variant="h4" gutterBottom>
-                    Experience:
+                    Role
                     <Typography className={ classes.title } variant="h6">
-                      PGA
+                      Master Golf Instructor
                     </Typography>
                   </Typography>
                   <Typography className={ classes.title } variant="h4" gutterBottom>
-                    Years:
+                    Experience
                     <Typography className={ classes.title } variant="h6">
-                      Since 2000
+                      PGA since (2000)
                     </Typography>
                   </Typography>
                   <Typography className={ classes.title } variant="h4" gutterBottom>
-                    Specialty:
+                    Specialty
                     <Typography className={ classes.title } variant="h6">
                       Step-by-step video analysis based instructions
                     </Typography>
                   </Typography>
                 </div>
+              </Col>
+            </Row>
+          </div>
+          <div className={classes.lessonImages}>
+            <Row>
+              <Col xs={24} md={12} lg={6}>
+                <ImageCard url='/image/lesson_1.jpg'/>
+              </Col>
+              <Col xs={24} md={12} lg={6}>
+                <ImageCard url='/image/lesson_1.jpg'/>
+              </Col>
+              <Col xs={24} md={12} lg={6}>
+                <ImageCard url='/image/lesson_1.jpg'/>
+              </Col>
+              <Col xs={24} md={12} lg={6}>
+                <ImageCard url='/image/lesson_1.jpg'/>
               </Col>
             </Row>
           </div>
