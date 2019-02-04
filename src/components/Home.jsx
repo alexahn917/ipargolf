@@ -1,17 +1,43 @@
 import React from 'react';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout } from 'antd';
 import withStyles from '@material-ui/core/styles/withStyles';
 import Typography from '@material-ui/core/Typography';
+
+import About from './About';
+import Service from './Service';
+import Staff from './Staff';
+import Contact from './Contact';
 
 const { Header, Content, Footer } = Layout;
 
 const styles = theme => ({
+  container: {
+    display: 'flex',
+  },
   header: {
+    backgroundImage: 'url(/image/title.jpg)',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    height: '100vh',
+    padding: '0',
+  },
+  headerText: {
+    color: 'white',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
     textAlign: 'center',
+    height: '100%',
+    width: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
   },
   title: {
     color: 'white',
-    padding: '20px',
+  },
+  subtitle: {
+    color: '#b8b8b8',
   },
 });
 
@@ -19,20 +45,27 @@ class Home extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <Layout className="layout">
+      <Layout className="container">
         <Header className={ classes.header }>
-          <Typography className={ classes.title } variant="title" gutterBottom>
-            IPar Golf Academy
-          </Typography>
+          <div className={ classes.headerText }>
+            <Typography className={ classes.title } variant="h1">
+              IPar Golf Academy
+            </Typography>
+            <Typography className= {classes.subtitle } variant="h3">
+              We Make Golf Easy
+            </Typography>
+          </div>
         </Header>
         <Content>
-          <div style={{ background: 'white', padding: 24, minHeight: 280 }}>Content1</div>
-          <div style={{ background: 'skyblue', padding: 24, minHeight: 280 }}>Content2</div>
-          <div style={{ background: 'blue', padding: 24, minHeight: 280 }}>Content3</div>
-          <div style={{ background: 'purple', padding: 24, minHeight: 280 }}>Content4</div>
+          <About/>
+          <Service/>
+          <Staff/>
+          <Contact/>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>
-          Ant Design ©2018 Created by Ant UED
+        <Footer style={{ backgroundColor: 'rgba(114, 152, 104, 1)', textAlign: 'center' }}>
+          <Typography className={ classes.title } variant="h4" gutterBottom>
+            iPar Golf Academy, 1088 Kiely Blvd, Santa Clara, CA 95051
+          </Typography>
         </Footer>
       </Layout>
     );
