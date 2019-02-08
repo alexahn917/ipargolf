@@ -60,7 +60,7 @@ class Staff extends React.Component {
         <div className={ classes.contentContainer }>
           <div className={ classes.content }>
             <Typography className={ classes.title } variant="h1">
-              Michael Jung
+              Michael Chung
             </Typography>
             <Typography className={ classes.text } variant="h2">
               Instructor
@@ -82,7 +82,7 @@ class Staff extends React.Component {
                   <Typography className={ classes.title } variant="h5" gutterBottom>
                     <b>Experience</b>
                     <Typography className={ classes.title } variant="h6">
-                      PGA since (2000)
+                      Taught golf lessons since 2001
                     </Typography>
                   </Typography>
                   <Typography className={ classes.title } variant="h5" gutterBottom>
@@ -101,13 +101,13 @@ class Staff extends React.Component {
                 <ImageCard url='/image/lesson_1.jpg'/>
               </Col>
               <Col xs={24} md={12} lg={6}>
-                <ImageCard url='/image/lesson_1.jpg'/>
+                <ImageCard url='/image/lesson_2.jpg'/>
               </Col>
               <Col xs={24} md={12} lg={6}>
-                <ImageCard url='/image/lesson_1.jpg'/>
+                <ImageCard url='/image/lesson_3.jpg'/>
               </Col>
               <Col xs={24} md={12} lg={6}>
-                <ImageCard url='/image/lesson_1.jpg'/>
+                <ImageCard url='/image/lesson_4.jpg'/>
               </Col>
             </Row>
           </div>
