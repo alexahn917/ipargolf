@@ -42,6 +42,10 @@ const styles = theme => ({
 });
 
 class Home extends React.Component {
+  trackLocation = () => {
+    window.fbq('track', 'FindLocation');
+  }
+
   render() {
     const { classes } = this.props;
     return (
@@ -64,7 +68,7 @@ class Home extends React.Component {
         </Content>
         <Footer style={{ backgroundColor: 'rgba(114, 152, 104, 1)', textAlign: 'center' }}>
           <Typography className={ classes.title } variant="h4" gutterBottom>
-            <a className={ classes.title } href="https://goo.gl/maps/eX3FXTsMPsG2">iPar Golf Academy, 1088 Kiely Blvd, Santa Clara, CA 95051</a>
+            <a className={ classes.title } href="https://goo.gl/maps/eX3FXTsMPsG2" onClick={this.trackLocation}>iPar Golf Academy, 1088 Kiely Blvd, Santa Clara, CA 95051</a>
           </Typography>
         </Footer>
       </Layout>

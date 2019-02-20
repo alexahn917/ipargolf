@@ -24,13 +24,17 @@ const styles = theme => ({
 });
 
 class Contact extends React.Component {
+  trackCall = () => {
+    window.fbq('track', 'Contact');
+  }
+
   render() {
     const { classes } = this.props;
     return (
       <div className={ classes.container }>
         <div className={ classes.content }>
           <Typography variant="h1" gutterBottom>
-            <a className={ classes.title } href="tel:510-912-1662">(510) 912-1662</a>
+            <a className={ classes.title } href="tel:510-912-1662" onClick={this.trackCall}>(510) 912-1662</a>
           </Typography>
           <Typography className={ classes.title } variant="h3">
             Call Now
