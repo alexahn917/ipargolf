@@ -82,13 +82,16 @@ class Staff extends React.Component {
                   <Typography className={ classes.title } variant="h5" gutterBottom>
                     <b>Experience</b>
                     <Typography className={ classes.title } variant="h6">
-                      Taught golf lessons since 2001
+                      PGA since 2001
                     </Typography>
                   </Typography>
                   <Typography className={ classes.title } variant="h5" gutterBottom>
                     <b>Specialty</b>
                     <Typography className={ classes.title } variant="h6">
-                      Step-by-step video analysis based instructions
+                      Step-by-step video analysis based instructions.
+                    </Typography>
+                    <Typography className={ classes.title } variant="h6">
+                      Personalized training, from beginners to professionals.
                     </Typography>
                   </Typography>
                 </div>

@@ -64,7 +64,7 @@ class Home extends React.Component {
         </Content>
         <Footer style={{ backgroundColor: 'rgba(114, 152, 104, 1)', textAlign: 'center' }}>
           <Typography className={ classes.title } variant="h4" gutterBottom>
-            iPar Golf Academy, 1088 Kiely Blvd, Santa Clara, CA 95051
+            <a className={ classes.title } href="https://goo.gl/maps/eX3FXTsMPsG2">iPar Golf Academy, 1088 Kiely Blvd, Santa Clara, CA 95051</a>
           </Typography>
         </Footer>
       </Layout>

@@ -16,7 +16,7 @@ const styles = theme => ({
     textAlign: 'center',
   },
   title: {
-    color: 'white',
+    color: 'rgba(223, 233, 249, 1)',
   },
   text: {
     color: '#c6c3c3',
@@ -29,8 +29,8 @@ class Contact extends React.Component {
     return (
       <div className={ classes.container }>
         <div className={ classes.content }>
-          <Typography className={ classes.title } variant="h1" gutterBottom>
-            (510) 912-1662
+          <Typography variant="h1" gutterBottom>
+            <a className={ classes.title } href="tel:510-912-1662">(510) 912-1662</a>
           </Typography>
           <Typography className={ classes.title } variant="h3">
             Call Now
